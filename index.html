@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>sedona</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="nav-menu">
+          <li class="nav-menu__item"><a href="#">главная</a></li>
+          <li class="nav-menu__item"><a href="#">фото и видео</a></li>
+          <li class="nav-menu__item logo">
+            <img
+              class="logo__image"
+              src="img/logotype-desktop.svg.png"
+              alt=""
+            />
+          </li>
+          <li class="nav-menu__item"><a href="#">форма отзыва</a></li>
+          <li class="nav-menu__item"><a href="#">html academy</a></li>
+        </ul>
+      </nav>
+      <span class="header__sedona">sedona</span>
+      <img class="header__triangle" src="img/intro-triangle.svg.png" alt="" />
+    </header>
+    <main>
+      <div class="main__title">
+        <h2 class="main__headline">оставьте свой отзыв</h2>
+        <p class="main__text">
+          помогите нашим отелям стать лучше! оставьте отзыв о них, <br />а также
+          о посещенных вами достопримечательностях
+        </p>
+      </div>
+      <form class="form">
+        <div class="form__radiogroup">
+          <h2 class="form__headline radiogroup-headline">
+            ваше общее впечатление:
+          </h2>
+          <section>
+            <label class="form__radiogroup-item"
+              >Скорее положительное<input
+                type="radio"
+                checked="checked"
+                name="radio" />
+              <span class="checkmark"></span
+            ></label>
+            <label class="form__radiogroup-item"
+              >Скорее отрицательное<input type="radio" name="radio" />
+              <span class="checkmark"></span
+            ></label>
+            <label class="form__radiogroup-item"
+              >Затрудняюсь ответить<input type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+          </section>
+        </div>
+
+        <div class="form__user-info">
+          <h2 class="form__headline">представьтесь:</h2>
+          <section>
+            <div class="form__user-info-item">
+              <label for="fname">Имя*:</label>
+              <input type="text" id="fname" required />
+            </div>
+            <div class="form__user-info-item">
+              <label for="lname">Фамилия*:</label>
+              <input type="text" id="lname" required />
+            </div>
+            <div class="form__user-info-item">
+              <label for="tname">Отчество:</label>
+              <input type="text" id="tname" />
+            </div>
+          </section>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

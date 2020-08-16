@@ -1,0 +1,176 @@
+/* текст отзыва */
+main {
+  margin-bottom: 100px;
+}
+.align {
+  display: flex;
+  justify-content: center;
+}
+
+.main__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "PT sans", sans-serif;
+  margin-bottom: 69px;
+}
+
+.main__headline {
+  margin: 0 0 30px 0;
+  font-size: 30px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.main__text {
+  font-size: 14px;
+  margin: 0;
+  color: #333333;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* форма радио и ФИО */
+.form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form__radiogroup {
+  width: 349px;
+  height: 292px;
+  position: relative;
+}
+
+.form__radiogroup:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #c8c8c8;
+  position: absolute;
+  top: 0;
+  left: 140%;
+}
+
+/* .formone__container {
+  line-height: 3.5;
+  margin-top: 41px;
+} */
+
+.form__headline {
+  font-family: "PT sans", sans-serif;
+  font-size: 21px;
+  text-transform: uppercase;
+  margin: 0 0 60px 0;
+}
+
+.radiogroup-headline {
+  margin: 0 0 67px 65px;
+}
+
+.form__radiogroup-item {
+  display: block;
+  position: relative;
+  padding-left: 65px;
+  margin-bottom: 32px;
+  cursor: pointer;
+  font-family: "PT sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  user-select: none;
+  height: 46px;
+  display: flex;
+  align-items: center;
+}
+
+.form__radiogroup-item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  height: 46px;
+  width: 46px;
+  background-color: #eee;
+  border-radius: 50%;
+  left: 0;
+}
+
+.form__radiogroup-item:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.form__radiogroup-item input:checked ~ .checkmark {
+  background-color: #c8c8c8;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form__radiogroup-item input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.form__radiogroup-item .checkmark:after {
+  top: 15px;
+  left: 15px;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: black;
+}
+
+/* поля ввода ФИО */
+.form__user-info {
+  width: 400px;
+}
+
+.form__user-info-item {
+  display: flex;
+  align-items: center;
+  margin-top: 23px;
+}
+
+.form__user-info-item label {
+  margin-right: 15px;
+  color: #333333;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.form__user-info-item input {
+  flex: 1;
+  border: none;
+  height: 58px;
+  background-color: #f2f2f2;
+  font-family: "PT sans", sans-serif;
+  text-transform: uppercase;
+  outline: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  padding-left: 20px;
+}
+
+.form__user-info-item input:hover {
+  background-color: #c8c8c8;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.form__user-info-item input:focus {
+  background-color: white;
+  box-shadow: inset 0px 0px 0px 3px rgba(242, 242, 242, 1);
+  transition: 200ms;
+}
