@@ -44,7 +44,7 @@
           о посещенных вами достопримечательностях
         </p>
       </div>
-      <form class="form">
+       <form class="form">
         <div class="form__radiogroup">
           <h2 class="form__headline radiogroup-headline">
             ваше общее впечатление:
@@ -85,7 +85,60 @@
             </div>
           </section>
         </div>
-      </form>
+       </form>
+      
+        <div class="contact-align">
+          <h2 class="form__headline contact-title">контактная информация:</h2>
+        </div>
+
+      <section class="contact-info">      
+        <div class="contact-info__user-contact tel-input">
+          <label for="phone">телефон*:</label>
+          <input class="contact-info__phone" type="tel" id="phone" placeholder="Введите телефон" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"/>
+        </div>
+        <div class="contact-info__user-contact mail-input">
+          <label for="email">электронная почта*:</label>
+          <input class="contact-info__mail" type="email" id="email" placeholder="Введите e-mail"/>
+        </div>
+      </section>
+      
+      <div class="seats-align">
+        <h2 class="form__headline seats-title">посещенные<br>достопримечательности:</h2>
+      </div>
+      
+      <section class="checkbox-group">
+        <label class="checkbox-group__container">Мост Дьявола
+          <input type="checkbox" checked="checked">
+          <span class="checkbox-group__checkmark">
+        </label>
+          <label class="checkbox-group__container">Гора-Колокол
+          <input type="checkbox">
+          <span class="checkbox-group__checkmark">
+        </label>
+          <label class="checkbox-group__container">Слайд-Парк
+          <input type="checkbox">
+          <span class="checkbox-group__checkmark">
+        </label>
+          <label class="checkbox-group__container">Красные скалы
+          <input type="checkbox">
+          <span class="checkbox-group__checkmark">
+        </label>
+      </section>
+
+      <div class="comment-align">
+        <h2 class="form__headline comment-title">опишите свои эмоции:</h2>
+      </div>
+
+      <div class="comment">
+        <textarea type="text" placeholder="Опишите подробно все свои восторги"></textarea>
+      </div>
+
+      <div class="comment-with-button">
+        <div class="button-comment">
+          <button type="button">отправить отзыв</button>
+        </div>
+        <p class="impotant-input">* - обязательные поля</p>
+      </div> 
     </main>
   </body>
 </html>

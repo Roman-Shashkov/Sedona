@@ -36,6 +36,7 @@ main {
 .form {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 46px;
 }
 
 .form__radiogroup {
@@ -54,11 +55,6 @@ main {
   left: 140%;
 }
 
-/* .formone__container {
-  line-height: 3.5;
-  margin-top: 41px;
-} */
-
 .form__headline {
   font-family: "PT sans", sans-serif;
   font-size: 21px;
@@ -67,7 +63,7 @@ main {
 }
 
 .radiogroup-headline {
-  margin: 0 0 67px 65px;
+  margin: 0 0 67px 26px;
 }
 
 .form__radiogroup-item {
@@ -102,6 +98,7 @@ main {
 
 .form__radiogroup-item:hover input ~ .checkmark {
   background-color: #ccc;
+  transition: 200ms;
 }
 
 .form__radiogroup-item input:checked ~ .checkmark {
@@ -141,7 +138,7 @@ main {
 .form__user-info-item label {
   margin-right: 15px;
   color: #333333;
-  font-family: "PT Sans";
+  font-family: "PT sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
@@ -166,7 +163,6 @@ main {
 .form__user-info-item input:hover {
   background-color: #c8c8c8;
   transition: 200ms;
-  cursor: pointer;
 }
 
 .form__user-info-item input:focus {
@@ -174,3 +170,311 @@ main {
   box-shadow: inset 0px 0px 0px 3px rgba(242, 242, 242, 1);
   transition: 200ms;
 }
+
+.contact-align {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+.contact-title {
+  text-align: center;
+  position: absolute;
+  background-color: #fff;
+  padding: 0 60px;
+}
+
+.contact-align::before {
+  content: "";
+  display: block;
+  width: 81%;
+  height: 1px;
+  background-color: #c8c8c8;
+  position: absolute;
+  top: 12px;
+}
+
+/*Контактная информация*/
+
+.contact-info {
+  margin: 0 128px 58px 69px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tel-input .mail-input {
+  position: relative;
+}
+
+.tel-input:after {
+  content: "";
+  background-image: url(../img/phone.svg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 58px;
+  height: 60px;
+  background-color: #e6e6e6;
+  text-align: center;
+  font-size: 30px;
+  line-height: 80px;
+  position: absolute;
+}
+
+.mail-input:after {
+  content: "";
+  background-image: url(../img/mail.svg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 58px;
+  height: 60px;
+  background-color: #e6e6e6;
+  text-align: center;
+  font-size: 30px;
+  line-height: 80px;
+  position: absolute;
+}
+
+.contact-info__user-contact label {
+  margin-right: 15px;
+  color: #333333;
+  font-family: "PT sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.contact-info__user-contact input {
+  border: none;
+  height: 58px;
+  width: 258px;
+  background-color: #f2f2f2;
+  font-family: "PT sans", sans-serif;
+  outline: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  padding-left: 20px;
+}
+
+.contact-info__user-contact input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.contact-info__user-contact input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.contact-info__user-contact input:hover {
+  background-color: #c8c8c8;
+  transition: 200ms;
+}
+
+.contact-info__user-contact input:focus {
+  background-color: white;
+  box-shadow: inset 0px 0px 0px 3px rgba(242, 242, 242, 1);
+  transition: 200ms;
+}
+
+/*Посещенные достопримечательности*/
+
+.seats-align {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+.seats-title {
+  text-align: center;
+  position: absolute;
+  background-color: #fff;
+  padding: 0 60px;
+}
+
+.seats-align:before {
+  content: "";
+  display: block;
+  width: 81%;
+  height: 1px;
+  background-color: #c8c8c8;
+  position: absolute;
+  top: 17px;
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 35px;
+  margin: 0 82px 45px 82px;
+}
+
+.checkbox-group__container {
+  display: block;
+  position: relative;
+  padding-left: 77px;
+  padding-top: 15px;
+  font-family: "PT sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-group__container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-group__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border-radius: 5%;
+}
+
+.checkbox-group__container:hover input ~ .checkbox-group__checkmark {
+  background-color: #ccc;
+  transition: 200ms;
+}
+
+.checkbox-group__container input:checked ~ .checkbox-group__checkmark {
+  /*background-color: #c8c8c8;*/
+}
+
+.checkbox-group__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-group__container input:checked ~ .checkbox-group__checkmark:after {
+  display: block;
+}
+
+.checkbox-group__container .checkbox-group__checkmark:after {
+  left: 19px;
+  top: 9px;
+  width: 11px;
+  height: 21px;
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+}
+
+/*Опишите свои эмоции*/
+
+.comment-align {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.comment-title {
+  text-align: center;
+  position: absolute;
+  background-color: #fff;
+  padding: 0 60px;
+}
+
+.comment-align:before {
+  content: "";
+  display: block;
+  width: 81%;
+  height: 1px;
+  background-color: #c8c8c8;
+  position: absolute;
+  top: 10px;
+}
+
+.comment {
+  display: flex;
+  justify-content: center;
+  margin-top: 23px;
+  margin-bottom: 58px;
+}
+
+.comment textarea {
+  appearence: none;
+  border: none;
+  background-color: #f2f2f2;
+  font-family: "PT sans", sans-serif;
+  outline: none;
+  resize: none;
+  width: 960px;
+  height: 160px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+
+.comment textarea:hover {
+  background-color: #c8c8c8;
+  transition: 200ms;
+}
+
+.comment textarea:focus {
+  background-color: white;
+  box-shadow: inset 0px 0px 0px 3px rgba(242, 242, 242, 1);
+  transition: 200ms;
+}
+
+.comment textarea::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.comment textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.button-comment button {
+  width: 480px;
+  height: 58px;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;s
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  cursor: pointer;
+  border: none;
+  transition-duration: 0.4s;
+}
+
+.button-comment button:hover {
+  background-color: #4198ce;
+  transition: 200ms;
+}
+
+.button-comment button:focus {
+  background-color: #c8c8c8;
+  box-shadow: inset 0px 0px 0px 3px rgba(242, 242, 242, 1);
+  transition: 200ms;
+  outline: none;
+}
+
+.comment-with-button{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 106px;
+}
+
+.impotant-input{
+color: #333333;
+font-family: "PT sans", sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 26px;
+text-transform: uppercase;
+}
+
