@@ -1,0 +1,72 @@
+footer{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 45px;
+  margin: 0 144px 0 108px;
+}  
+
+.visitsedona{
+  font-family: "PT sans", sans-serif;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.links{
+display:flex;
+}
+
+.links__block{
+  width: 50px;
+  height: 50px;
+  border-radius:5%;
+  background-color: #81b3d2;
+  cursor: pointer; 
+  margin: 0 3px; 
+}
+
+.links__block:hover {
+  background-color: #4198ce;
+  transition: 200ms;
+}
+
+.twitter{
+  background-image: url(../img/icon-twitter.svg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facebook{
+  background-image: url(../img/icon-facebook.svg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.youtube{
+  background-image: url(../img/icon-youtube.svg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.academy-logo{
+    color: #333333;
+    font-family: "PT sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+    position:relative;
+}
+
+.academy-logo:after{
+  content: url(..//img/htmlacademy.svg.png);
+  position: absolute;
+  left: 110px;
+  bottom: -12px;
+}
+
+
+
+
+

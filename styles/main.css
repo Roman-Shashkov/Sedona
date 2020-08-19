@@ -1,6 +1,6 @@
 /* текст отзыва */
 main {
-  margin-bottom: 100px;
+  
 }
 .align {
   display: flex;
@@ -60,6 +60,7 @@ main {
   font-size: 21px;
   text-transform: uppercase;
   margin: 0 0 60px 0;
+  font-weight: bold;
 }
 
 .radiogroup-headline {
@@ -467,6 +468,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 0 106px;
+margin-bottom: 87px;
 }
 
 .impotant-input{
