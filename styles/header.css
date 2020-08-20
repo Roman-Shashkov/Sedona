@@ -8,33 +8,29 @@ body {
 }
 
 .header {
-  height: 357px;
-  background: url(../img/back-desktop.jpg) no-repeat center -160px;
+  height: 301px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   margin-bottom: 108px;
-}
-
-.header__nav {
-  width: 100%;
 }
 
 .nav-menu {
   list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
-  background-color: white;
-  height: 56px;
+}
+
+.nav-menu__nav {
+  display: flex;
 }
 .nav-menu__item {
   display: flex;
-  height: 100%;
+  justify-content: center;
   align-items: center;
+  width: 239px;
+  height: 56px;
 }
 
 .nav-menu__item a {
@@ -45,13 +41,23 @@ body {
   text-transform: uppercase;
   transition: color 0.2s linear;
 }
+
 .nav-menu__item a:hover {
   color: #20b2aa;
 }
+
+.image-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 301px;
+  background: url(../img/back-desktop.jpg) no-repeat center -216px;
+  text-align: center;
+}
+
 .logo__image {
-  position: relative;
-  margin-top: auto;
-  margin-left: 30px;
+  margin: auto;
+  padding-bottom: 38px;
 }
 
 .header__sedona {
@@ -60,7 +66,7 @@ body {
   color: white;
   font-size: 115px;
   font-weight: 700;
-  margin-top: 30px;
+  padding-bottom: 35px;
 }
 .header__triangle {
   width: 100%;
