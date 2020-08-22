@@ -33,7 +33,7 @@ body {
   height: 56px;
 }
 
-.nav-menu__item a {
+.nav-menu__nav a {
   text-decoration: none;
   color: #000;
   font-family: "PT sans", sans-serif;
@@ -42,7 +42,7 @@ body {
   transition: color 0.2s linear;
 }
 
-.nav-menu__item a:hover {
+.nav-menu__nav a:hover {
   color: #20b2aa;
 }
 

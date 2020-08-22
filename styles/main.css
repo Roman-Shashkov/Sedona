@@ -48,7 +48,7 @@ main {
 .form__radiogroup:after {
   content: "";
   width: 1px;
-  height: 100%;
+  height: 106%;
   background: #c8c8c8;
   position: absolute;
   top: 0;
@@ -61,6 +61,7 @@ main {
   text-transform: uppercase;
   margin: 0 0 60px 0;
   font-weight: bold;
+  text-align: center;
 }
 
 .radiogroup-headline {
@@ -176,23 +177,27 @@ main {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 90px;
-}
-.contact-title {
-  text-align: center;
-  position: absolute;
-  background-color: #fff;
-  padding: 0 60px;
 }
 
 .contact-align::before {
   content: "";
   display: block;
-  width: 81%;
+  width: 24%;
   height: 1px;
   background-color: #c8c8c8;
   position: absolute;
-  top: 12px;
+  top: 10px;
+  right: 117px;
+}
+.contact-align::after {
+  content: "";
+  display: block;
+  width: 24%;
+  height: 1px;
+  background-color: #c8c8c8;
+  position: absolute;
+  top: 10px;
+  left: 117px;
 }
 
 /*Контактная информация*/
@@ -284,37 +289,42 @@ main {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 90px;
-}
-.seats-title {
-  text-align: center;
-  position: absolute;
-  background-color: #fff;
-  padding: 0 60px;
 }
 
 .seats-align:before {
   content: "";
   display: block;
-  width: 81%;
+  width: 24%;
   height: 1px;
   background-color: #c8c8c8;
   position: absolute;
   top: 17px;
+  right: 117px;
 }
+
+.seats-align:after {
+  content: "";
+  display: block;
+  width: 24%;
+  height: 1px;
+  background-color: #c8c8c8;
+  position: absolute;
+  top: 17px;
+  left: 117px;
+}
+
 
 .checkbox-group {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 35px;
-  margin: 0 82px 45px 82px;
+  margin: 0 82px 87px 82px;
 }
 
 .checkbox-group__container {
   display: block;
   position: relative;
   padding-left: 77px;
-  padding-top: 15px;
+  line-height: 2.7;
   font-family: "PT sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -345,10 +355,6 @@ main {
   transition: 200ms;
 }
 
-.checkbox-group__container input:checked ~ .checkbox-group__checkmark {
-  /*background-color: #c8c8c8;*/
-}
-
 .checkbox-group__checkmark:after {
   content: "";
   position: absolute;
@@ -375,23 +381,28 @@ main {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 80px;
-}
-.comment-title {
-  text-align: center;
-  position: absolute;
-  background-color: #fff;
-  padding: 0 60px;
 }
 
 .comment-align:before {
   content: "";
   display: block;
-  width: 81%;
+  width: 24%;
   height: 1px;
   background-color: #c8c8c8;
   position: absolute;
   top: 10px;
+  right: 117px;
+}
+
+.comment-align:after {
+  content: "";
+  display: block;
+  width: 24%;
+  height: 1px;
+  background-color: #c8c8c8;
+  position: absolute;
+  top: 10px;
+  left: 117px;
 }
 
 .comment {
@@ -402,19 +413,18 @@ main {
 }
 
 .comment textarea {
-  appearence: none;
+  appearance: none;
   border: none;
   background-color: #f2f2f2;
   font-family: "PT sans", sans-serif;
   outline: none;
   resize: none;
-  width: 960px;
-  height: 160px;
+  width: 917px;
+  height: 135px;
   color: #000000;
   font-size: 18px;
   font-weight: 700;
-  padding-left: 25px;
-  padding-top: 25px;
+  padding: 25px;
 }
 
 .comment textarea:hover {
@@ -436,7 +446,7 @@ main {
   color: transparent;
 }
 
-.button-comment button {
+button {
   width: 480px;
   height: 58px;
   color: #ffffff;
@@ -451,27 +461,27 @@ main {
   transition-duration: 0.4s;
 }
 
-.button-comment button:hover {
+button:hover {
   background-color: #4198ce;
   transition: 200ms;
 }
 
-.button-comment button:focus {
+button:focus {
   background-color: #c8c8c8;
   box-shadow: inset 0px 0px 0px 3px rgba(242, 242, 242, 1);
   transition: 200ms;
   outline: none;
 }
 
-.comment-with-button{
+.submit-block{
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 0 106px;
+padding: 0 117px;
 margin-bottom: 87px;
 }
 
-.impotant-input{
+.text{
 color: #333333;
 font-family: "PT sans", sans-serif;
 font-size: 14px;
@@ -479,4 +489,3 @@ font-weight: 400;
 line-height: 26px;
 text-transform: uppercase;
 }
-
