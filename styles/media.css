@@ -1,0 +1,22 @@
+@media screen and (max-width: 600px) {
+  .nav-menu {
+    display: block;
+    margin-bottom: 57px;
+  }
+  .nav-menu__nav {
+    display: block;
+  }
+  .nav-menu__item {
+    width: 100%;
+    color: white;
+    background-color: #81b3d2;
+    box-shadow: 0 -1px 1px #929292 inset;
+  }
+
+  .logo__image {
+    display: block;
+  }
+  .main__headline {
+    display: block;
+  }
+}
