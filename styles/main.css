@@ -48,7 +48,7 @@ main {
 .form__radiogroup:after {
   content: "";
   width: 1px;
-  height: 106%;
+  height: 77%;
   background: #c8c8c8;
   position: absolute;
   top: 0;
