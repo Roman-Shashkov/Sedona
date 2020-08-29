@@ -72,7 +72,7 @@ main {
   display: block;
   position: relative;
   padding-left: 65px;
-  margin-bottom: 32px;
+  margin-bottom: 37px;
   cursor: pointer;
   font-family: "PT sans", sans-serif;
   font-size: 18px;
@@ -419,7 +419,7 @@ main {
   font-family: "PT sans", sans-serif;
   outline: none;
   resize: none;
-  width: 917px;
+  width: 77%;
   height: 135px;
   color: #000000;
   font-size: 18px;

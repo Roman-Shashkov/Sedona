@@ -26,9 +26,87 @@
 .main__headline {
     font-size: 26px;
     }
+
+  .form__headline{
+    font-size: 19px;
+  }
+
+  .radiogroup-headline{
+   margin: 0 0 19% -17%;
+  }
+
+  .form__radiogroup{
+      width: 46%;
+  }
+  .form__radiogroup:after{
+  display:none;
+  }
+
+  .form__radiogroup-item{
+  width: max-content;
+  }
+
+  .form__user-info {
+   width: 40%;
+   }
+
+   .form__user-info-item input{
+   font-size: 12px;
+   padding-left: 3%;
+   }
+
+  .form {
+     justify-content: space-evenly;
+  }
+
+  .contact-info{
+  display: block;
+      margin: 0 12% 7% 5%;
+  }
+
+  .contact-info__user-contact input{
+      width: 95%;
+  }
+
+  .contact-align::before{
+      right: 5%;
+    width: 17%;
+  }
+
+  .contact-align::after{
+   left: 5%;
+    width: 17%;
+  }
+
+  .contact-title{
+  margin-bottom: 3%;
+  }
+
+  .tel-input{
+      margin-bottom: 3%;
+  }
+
+  .seats-align:after{
+  left: 5%;
+    width: 17%;
+  }
+
+  .seats-align:before{
+  right: 5%;
+    width: 17%;
+  }
+
+  .checkbox-group{
+      flex-wrap: wrap;
+  }
+
+  .checkbox-group__container{
+  width: 140px;
+    height: 73px;
+  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   
   html {
   overflow-x: hidden;
@@ -206,6 +284,10 @@
     padding-left: 10px;
     font-size: 13px;
   }
+
+  .tel-input {
+    margin-bottom: -3%;
+   }
 
   .checkbox-group{
    display: block;
