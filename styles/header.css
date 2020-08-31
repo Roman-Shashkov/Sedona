@@ -48,8 +48,18 @@ body {
 
 .image-back {
   display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   justify-content: flex-end;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: justify;
   height: 301px;
   background: url(../img/back-desktop.jpg) no-repeat center -216px;
   text-align: center;
