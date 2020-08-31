@@ -158,6 +158,8 @@
   }
 
   .image-back {
+    margin: 0;
+    padding: 0;
     height: 67%;
     background: url(../img/back-desktop.jpg) no-repeat center -314px;
   }
